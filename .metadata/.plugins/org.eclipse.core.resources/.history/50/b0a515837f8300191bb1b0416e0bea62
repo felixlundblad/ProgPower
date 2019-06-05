@@ -1,0 +1,38 @@
+public class Bar{
+	String name;
+	int ageRequirement;
+	String[] banned;
+
+	public Bar(String name, int ageReq, String[] banned) {
+		this.name = name;
+		ageRequirement = ageReq;
+		this.banned = banned;
+	}
+
+	private boolean checkAge(int age) {
+		return age >= ageRequirement;
+	}
+
+	private boolean checkBanned(String name) {
+		for (int i = 0; i < banned.length; i++) {
+			if (name == banned[i]) return true;
+		}
+		return false;
+	}
+	
+	private void printBannedRejection(Person p) {
+		System.out.println("Good evening " + p.getName() + "!");
+		System.out.println("The list says you are banned since the last time.");
+		System.out.println("You are going to have to find another bar tonight.");
+		System.out.println("Sorry...");
+	}
+
+	public void enter(Person p) {
+		for (int i = 0; i < banned.length; i++) {
+			if (name == banned[i]) {
+				
+			}
+		}
+	}
+}
+

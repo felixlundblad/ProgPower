@@ -1,0 +1,12 @@
+
+public class Person {
+	int age;
+	String name;
+	int pers_nr;
+	
+	public Person(String n, int a, int p_n) {
+		age = a;
+		name = n;
+		pers_nr = p_n;
+	}
+}

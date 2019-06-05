@@ -1,0 +1,30 @@
+
+public class Person {
+	int age;
+	String name;
+	
+	public Person(String n, int a) {
+		age = a;
+		name = n;
+	}
+	
+	public void happy_birthday() {
+		age = age + 1;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public void printInfo() {
+		System.out.print("Name: \t" + name + '\t');
+		System.out.println("Age: \t" + age);
+	}
+	
+	public static void main(String[] args) {
+		Person p = new Person("Kaj", 13);
+		p.printInfo();
+		p.happy_birthday();
+		p.printInfo();
+	}
+}

@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class Bar{
+	String name;
+	int ageRequirement;
+	String[] banned;
+
+	public Bar(String name, int ageReq, String[] banned) {
+		this.name = name;
+		ageRequirement = ageReq;
+		this.banned = banned;
+	}
+
+	public boolean checkAge(int age) {
+		return age >= ageRequirement;
+	}
+
+	public boolean checkBanned(String name) {
+		for (int i = 0; i < banned.length; i++) {
+			if (name == banned[i]) return true;
+		}
+		return false;
+	}
+
+	public String getName() {
+		return name;
+	}
+}
+

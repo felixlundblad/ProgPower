@@ -1,0 +1,12 @@
+
+public class Person_example {
+	
+	public class Person{
+		
+	}
+
+	public static void main(String[] args) {
+
+
+	}
+}

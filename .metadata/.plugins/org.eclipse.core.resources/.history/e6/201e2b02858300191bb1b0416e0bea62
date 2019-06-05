@@ -1,0 +1,9 @@
+import java.util.ArrayList;
+
+public class BarList {
+	ArrayList<Bar> list = new ArrayList<Bar>();
+	
+	public BarList() {
+		
+	}
+}
