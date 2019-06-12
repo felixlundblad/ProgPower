@@ -18,10 +18,12 @@ public class BarNight {
 		company.add(p4);
 
 		System.out.println(company.toString());
+		scan.nextLine();
 		
 		company.add(new Person("Oden", 120));
 
 		System.out.println(company.toString());
+		scan.nextLine();
 		
 		BarList barList = new BarList();
 		
